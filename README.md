@@ -1,6 +1,6 @@
-# Melanoma Detection using Custom CNN
+# Melanoma Detection Using Custom CNN
 
-This project uses a custom Convolutional Neural Network (CNN) to detect melanoma in images of skin lesions among 10 classes. The **Gradio** library is used to create an interactive web app for model prediction. The model achieves an **83% accuracy** in classifying the skin lesions.
+This project leverages a custom Convolutional Neural Network (CNN) to detect melanoma and classify skin lesions across 10 distinct classes. Additionally, the **Gradio** library has been used to create an interactive web application for real-time model predictions. The model achieves an **83% accuracy** in classifying skin lesions.
 
 ## Table of Contents
 - [General Information](#general-information)
@@ -18,14 +18,14 @@ This project uses a custom Convolutional Neural Network (CNN) to detect melanoma
 
 ## General Information
 
-This project aims to classify different types of skin lesions to detect melanoma using deep learning. It uses a **custom CNN architecture** and tackles challenges such as **class imbalance** by augmenting data and using various image preprocessing techniques. The project also demonstrates the use of **Gradio** to deploy the trained model as a simple web interface.
+This project aims to address the challenge of classifying various skin lesions, including melanoma, using deep learning techniques. A **custom CNN architecture** was developed to solve this problem. Additionally, the project addresses issues like **class imbalance** by employing data augmentation strategies and other preprocessing techniques. The final model is deployed as a simple, user-friendly web interface using **Gradio**.
 
 ## Algorithms Used
-- **Convolutional Neural Network (CNN)**: A custom CNN architecture is used for feature extraction and classification of skin lesion images.
+- **Convolutional Neural Network (CNN)**: A deep learning architecture specifically designed for feature extraction and classification of skin lesion images.
 
 ## Dataset Information
 
-The dataset consists of **2357 images** of various skin conditions, both malignant and benign. These images are provided by the **International Skin Imaging Collaboration (ISIC)**. The dataset includes the following classes:
+The dataset used contains **2357 images** of both malignant and benign skin conditions, sourced from the **International Skin Imaging Collaboration (ISIC)**. The dataset covers the following skin diseases:
 
 - Actinic keratosis
 - Basal cell carcinoma
@@ -37,35 +37,36 @@ The dataset consists of **2357 images** of various skin conditions, both maligna
 - Squamous cell carcinoma
 - Vascular lesion
 
-The dataset is slightly imbalanced, with **melanomas** and **moles (nevi)** having a dominant number of images compared to the other classes.
+The dataset is moderately imbalanced, with a larger number of **melanoma** and **mole (nevus)** images compared to other categories.
 
 ## Steps Involved
-1. **Data Loading**
-2. **Baseline Model Building**: Construct the initial CNN model.
-3. **Training and Testing the Baseline Model**
-4. **Building an Augmented Model**: Add data augmentation techniques to improve generalization.
-5. **Training and Testing the Augmented Model**
-6. **Countering Class Imbalance with Augmentor**: Apply image augmentation specifically to balance class distribution.
-7. **Building the Final Model**: Construct the final model after incorporating augmentation strategies.
-8. **Training and Testing the Final Model**
-9. **Verifying the Model**: Ensure model accuracy and performance on unseen data.
+
+1. **Data Loading**: Load and preprocess the dataset.
+2. **Baseline Model Building**: Develop an initial CNN model.
+3. **Training and Testing the Baseline Model**: Train and evaluate the baseline model on the dataset.
+4. **Building an Augmented Model**: Apply data augmentation techniques to improve generalization.
+5. **Training and Testing the Augmented Model**: Train and test the augmented model.
+6. **Countering Class Imbalance**: Use **Augmentor** to balance class distribution through targeted augmentation.
+7. **Building the Final Model**: Construct the final, improved model incorporating augmentation and other refinements.
+8. **Training and Testing the Final Model**: Train and validate the final model on the dataset.
+9. **Verifying the Model**: Ensure robust performance on unseen data and evaluate accuracy.
 
 ## Results
 
 ### Baseline Model
-- The baseline model provides initial accuracy and loss metrics.
-- ![Baseline Model Results](path/to/baseline_model_image.png) <!-- Replace with actual image path -->
+- The baseline model provided initial insights into the performance with no data augmentation.
+- ![Baseline Model Results](baseline_model.png) <!-- Replace with actual image path -->
 
 ### Augmented Model
-- Data augmentation was applied to improve the model’s robustness.
-- ![Augmented Model Results](path/to/augmented_model_image.png) <!-- Replace with actual image path -->
+- After applying data augmentation, the model demonstrated improved generalization and robustness.
+- ![Augmented Model Results](augmented_model.png) <!-- Replace with actual image path -->
 
 ### Final Model
-- The final model, incorporating all improvements, achieved **87% accuracy** and a **loss of 0.3**.
-- ![Final Model Results](path/to/final_model_image.png) <!-- Replace with actual image path -->
+- The final model, after handling class imbalance and other enhancements, achieved **83% accuracy** and a **loss of 0.5**.
+- ![Final Model Results](final_model.png) <!-- Replace with actual image path -->
 
 ## Conclusion
-As the model's accuracy increased, the loss consistently decreased. The final model achieved **83% accuracy** and a loss of **0.5**. By augmenting the data and addressing class imbalance, the model's performance was significantly improved. The model is highly effective in predicting the class of skin lesions with high accuracy.
+The model's performance improved significantly as **accuracy increased** while **loss consistently decreased**. The final model achieved **83% validation accuracy** with a **validation loss of 0.5**. The implementation of data augmentation and techniques to counter class imbalance played a key role in enhancing the model's performance, making it highly effective at predicting the class of skin lesions with considerable accuracy.
 
 ## Technologies Used
 - **Python**
@@ -74,10 +75,10 @@ As the model's accuracy increased, the loss consistently decreased. The final mo
 - **Augmentor**
 - **Matplotlib**
 - **NumPy**
-- **Gradio** (for the web app interface)
+- **Gradio** (for web application interface)
 
 ## Contact
-Created by [@sanchitapatil](https://github.com/sanchitapatil) - feel free to contact me for any questions or collaboration opportunities!
+Created by [@sanchitapatil](https://github.com/sanchitapatil) - feel free to reach out for any questions or collaboration opportunities!
 
 ## License
 This project is open-source and available under the [MIT License](LICENSE).
