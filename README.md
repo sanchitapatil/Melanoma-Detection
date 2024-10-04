@@ -1,6 +1,6 @@
 # Melanoma Detection Using Custom CNN
 
-This project leverages a custom Convolutional Neural Network (CNN) to detect melanoma and classify skin lesions across 10 distinct classes. Additionally, the **Gradio** library has been used to create an interactive web application for real-time model predictions. The model achieves an **83% accuracy** in classifying skin lesions.
+This project leverages a custom Convolutional Neural Network (CNN) to detect melanoma and classify skin lesions across 9 distinct classes. Additionally, the **Gradio** library has been used to create an interactive web application for real-time model predictions. The model achieves an **83% accuracy** in classifying skin lesions.
 
 ## Table of Contents
 - [General Information](#general-information)
@@ -25,7 +25,7 @@ This project aims to address the challenge of classifying various skin lesions, 
 
 ## Dataset Information
 
-The dataset used contains **2357 images** of both malignant and benign skin conditions, sourced from the **International Skin Imaging Collaboration (ISIC)**. The dataset covers the following skin diseases:
+The dataset used contains **2239 images** of both malignant and benign skin conditions, sourced from the **International Skin Imaging Collaboration (ISIC)**. The dataset covers the following skin diseases:
 
 - Actinic keratosis
 - Basal cell carcinoma
