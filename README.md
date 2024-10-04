@@ -25,7 +25,7 @@ This project aims to address the challenge of classifying various skin lesions, 
 
 ## Dataset Information
 
-The dataset used contains **2239 images** of both malignant and benign skin conditions, sourced from the **International Skin Imaging Collaboration (ISIC)**. The dataset covers the following skin diseases:
+The dataset used contains **2357 images** of both malignant and benign skin conditions, sourced from the **International Skin Imaging Collaboration (ISIC)**. The dataset covers the following skin diseases:
 
 - Actinic keratosis
 - Basal cell carcinoma
